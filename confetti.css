@@ -1,0 +1,100 @@
+/* confetti.css */
+body {
+    background: black;
+    text-align: center;
+    margin: 0; /* Reset default margin to avoid spacing issues */
+}
+
+.container {
+    max-width: 800px; /* Adjust the value to your preferred maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding for better spacing */
+    box-sizing: border-box; /* Include padding in the total width */
+}
+
+h1,
+h2 {
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px white; 
+}
+
+img,
+#imv {
+    height: 270px;
+    width: 240px;
+    border-radius: 50px;
+    margin: 5px auto;
+}
+
+.images {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: khaki;
+    text-shadow: 1px 1px whitesmoke;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: red;
+    transform: scale(0.8);
+    transform-style: flat;
+}
+
+.images p {
+    color: cyan;
+}
+
+.text-container {
+    white-space: pre-line; /* Preserve line breaks */
+    color: aquamarine;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 3px black, 1px 1px 3px white; 
+    align-items: center;    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Reduce container width for smaller screens */
+    }
+
+    /* Adjust other styles as needed */
+    img,
+    #imv {
+        height: 200px;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%; /* Full width on the smallest screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust other styles as needed */
+    img,
+    #imv {
+        height: 150px;
+        width: 130px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
